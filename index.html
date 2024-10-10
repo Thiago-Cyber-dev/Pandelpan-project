@@ -20,7 +20,7 @@
         }
 
         .banner {
-            height: 400px;
+            height: 600px;
             background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/Imagenbanner.jpg'); 
             background-size: cover;
             background-position: center;
@@ -39,7 +39,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); 
+            background: rgba(0, 0, 0, 0); 
             z-index: 1;
         }
 
@@ -53,6 +53,13 @@
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        h3{
+            padding-top: 10px;
+            padding-bottom: 20px;
         }
 
         .btn {
@@ -69,12 +76,12 @@
         }
 
         .btn:hover {
-            background-color: #6d4820;
+            background-color: #ffb650;
         }
       
 
         nav {
-            background-color: #fff;
+            background-color:  #e8d7be;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
@@ -114,7 +121,7 @@
 
 
         a:hover {
-            color: #ffffff;
+            color:#6d4820;
         }
 
         .satisfy-regular {
@@ -124,12 +131,87 @@
           font-size: 88px;
           margin-bottom: 0px;
         }
+        /*css de las targetas */
+        .column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -5px;
+    padding-bottom: 40px;
+    background-color: #e8d7be;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/*css de la alerta*/
+
+.ventana{
+  background-color:rgb(226, 140, 47);
+  width:300px;
+  padding: 10px 20px;
+  margin: 40% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,0);
+  position:fixed;
+  top:-250px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#IrVentanaFlotante1:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+#IrVentanaFlotante2:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+#IrVentanaFlotante3:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+
+
     </style>
 </head>
 <body>
 
     <nav>
         <ul>
+            <li> <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\logo.png" style="padding-right: 380px;height: 50px;width: 500px;"></li>
             <li><a class="anav" href="#inicio">Inicio</a></li>
             <li><a class="anav" href="#nosotros">Nosotros</a></li>
             <li><a class="anav" href="#servicios">Servicios</a></li>
@@ -137,6 +219,7 @@
             <li><a class="anav" href="#contacto">Contacto</a></li>
         </ul>
     </nav>
+
     <div class="banner">
         <div class="banner-content">
             <h1 class="satisfy-regular">Pan del Pan</h1>
@@ -144,5 +227,74 @@
             <a href="#contacto" class="btn">Registrate</a>
         </div>
     </div>
+    <div class="row">
+        <h1>SERVICIOS</h1>
+        <div class="column">
+          <div class="card">
+          <a href="#IrVentanaFlotante1"> <h3>Pan Bajo Pedido</h3> </a>
+         <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\panbajopedido.jpg"  style="width:220px;height:280px;">
+            
+        
+            <p style=" padding-top: 10px; padding-bottom: 10px;" >Precio x unidad $500</p>
+            
+            <p>Desde 100 unidades en adelante <br>Envío GRATIS</p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <a href="#IrVentanaFlotante2"><h3>CupCakes</h3> </a>
+            <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\imgcupcakes.jpg"  style="width:220px;height:280px;">
+            
+             <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $2.500</p>
+            
+            <p>Desde 20 unidades en adelante <br>Envío GRATIS</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <a href="#IrVentanaFlotante3"> <h3>Pasteles</h3> </a>
+            <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\imgpasteles.jpg"  style="width:220px;height:280px;">
+            
+            <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $100.000</p>
+            
+            <p>Desde 1 unidades en adelante <br>Envío GRATIS</p>
+          </div>
+        </div>
+        
+      </div>
+      <div id="IrVentanaFlotante1" class="modal">
+        <div class="ventana">
+          <a href="#" style='text-decoration:none;'>
+          X
+          </a>
+          <h2>Panes Artesanales</h2>
+          <p> Hechos con masa madre y horneados a diario para garantizar frescura y sabor auténtico</p>
+        </div>  
+      </div>
+
+      <div id="IrVentanaFlotante2" class="modal">
+        <div class="ventana">
+          <a href="#" style='text-decoration:none;'>
+          X
+          </a>
+          <h2>Cupcakes gourmet: </h2>
+          <p> Variedad de sabores con decoraciones únicas y con el sabor casero que te encanta</p>
+        </div>  
+      </div>
+
+      <div id="IrVentanaFlotante3" class="modal">
+        <div class="ventana">
+          <a href="#" style='text-decoration:none;'>
+          X
+          </a>
+          <h2>Pasteles Personalizados:</h2>
+          <p> Perfectos para cualquier ocasión, desde cumpleaños hasta bodas</p>
+        </div>  
+      </div>
+
+
+
 </body>
 </html>
