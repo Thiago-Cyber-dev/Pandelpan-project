@@ -1,323 +1,440 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Satisfy&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Navegación</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Satisfy&display=swap" rel="stylesheet">
 
-        body {
-            font-family:  sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Navegación</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .banner {
-            height: 600px;
-            background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/Imagenbanner.jpg'); 
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
+    body {
+      font-family: sans-serif;
+    }
 
-        .banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0); 
-            z-index: 1;
-        }
+    .banner {
+      height: 600px;
+      background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/Imagenbanner.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
 
-        .banner-content {
-            z-index: 2;
-            position: relative;
-            down: 45px;
-         
-        }
+    .banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0);
+      z-index: 1;
+    }
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            padding-top: 40px;
-            text-align: center;
-        }
+    .banner-content {
+      z-index: 2;
+      position: relative;
+      down: 45px;
 
-        h3{
-            padding-top: 10px;
-            padding-bottom: 20px;
-        }
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin-top: 70px;
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      padding-top: 40px;
+      text-align: center;
+    }
 
-        }
+    h3 {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
 
-        .btn:hover {
-            background-color: #ffb650;
-        }
-      
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      margin-top: 70px;
 
-        nav {
-            background-color:  #e8d7be;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: right;
-        }
-
-        li {
-            margin: 0 0px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-            font-size: 15px;
-            font-weight: bold;
-            padding: 15px 20px;
-            display: block;
-            transition: color 0.3s ease;
-        }
-        .anav {
-            text-decoration: none;
-            color: #333;
-            font-size: 15px;
-            font-weight: bold;
-            padding: 15px 20px;
-            display: block;
-            transition: color 0.3s ease;
-        }
-        .anav:hover {
-            color: #6d4820;
-        }
+    .btn:hover {
+      background-color: #ffb650;
+    }
 
 
-        a:hover {
-            color:#6d4820;
-        }
+    nav {
+      background-color: #e8d7be;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        .satisfy-regular {
-          font-family: "Satisfy", cursive;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 88px;
-          margin-bottom: 0px;
-        }
-        /*css de las targetas */
-        .column {
-  float: left;
-  width: 33.3%;
-  padding: 0 10px;
-}
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: right;
+    }
 
+    li {
+      margin: 0 0px;
+    }
 
-.row {margin: 0 -5px;
-    padding-bottom: 40px;
-    background-color: #e8d7be;
-}
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 15px 20px;
+      display: block;
+      transition: color 0.3s ease;
+    }
 
+    .anav {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 15px 20px;
+      display: block;
+      transition: color 0.3s ease;
+    }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-/*css de la alerta*/
-
-.ventana{
-  background-color:rgb(226, 140, 47);
-  width:300px;
-  padding: 10px 20px;
-  margin: 40% auto;
-  position: relative;
-}
-.modal{
-  background-color: rgba(0,0,0,0);
-  position:fixed;
-  top:-250px;
-  right:0;
-  bottom:0;
-  left:0;
-  opacity:0;
-  pointer-events:none;
-  transition: all 1s;
-}
-#IrVentanaFlotante1:target{
-  opacity:1;
-  pointer-events:auto;
-}
-
-#IrVentanaFlotante2:target{
-  opacity:1;
-  pointer-events:auto;
-}
-
-#IrVentanaFlotante3:target{
-  opacity:1;
-  pointer-events:auto;
-}
-
-/*css de seccion nosotros*/
-
-.banner-nosotros {
-            height: 600px;
-            background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/imgcompletanosotros.jpg'); 
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
+    .anav:hover {
+      color: #6d4820;
+    }
 
 
+    a:hover {
+      color: #6d4820;
+    }
 
-    </style>
+    .satisfy-regular {
+      font-family: "Satisfy", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 88px;
+      margin-bottom: 0px;
+    }
+
+    /*css de las targetas */
+    .column {
+      float: left;
+      width: 33.3%;
+      padding: 0 10px;
+    }
+
+
+    .row {
+      margin: 0 -5px;
+      padding-bottom: 40px;
+      background-color: #e8d7be;
+    }
+
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    /*css de la alerta*/
+
+    .ventana {
+      background-color: rgb(226, 140, 47);
+      width: 300px;
+      padding: 10px 20px;
+      margin: 40% auto;
+      position: relative;
+    }
+
+    .modal {
+      background-color: rgba(0, 0, 0, 0);
+      position: fixed;
+      top: -250px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 1s;
+    }
+
+    #IrVentanaFlotante1:target {
+      opacity: 1;
+      pointer-events: auto;
+
+    }
+
+    #IrVentanaFlotante2:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #IrVentanaFlotante3:target {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /*css de seccion nosotros*/
+
+    .banner-nosotros {
+      height: 600px;
+      background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/imgcompletanosotros.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    /*CSS DEL COLOR DE LAS ESTRELLAS*/
+    .rating i {
+      font-size: 20px;
+      color: gold;
+    }
+
+    /*css tarjeta reseñas*/
+
+    .card-resena {
+      padding: 16px;
+      text-align: justify;
+      color: #f1f1f1;
+      background-color: #000000;
+    }
+
+    .row-resenas {
+      margin: 0 -5px;
+      padding-bottom: 40px;
+      color: #f1f1f1;
+      background-color: #000000;
+    }
+
+    .column-resenas {
+      float: left;
+      width: 33.3%;
+      padding: 0 10px;
+      background-color: #000000;
+    }
+
+    .row-resenas:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    @media screen and (max-width: 400px) {
+      .column-resenas {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <nav>
-        <ul>
-            <li> <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\logo.png" style="padding-right: 380px;height: 50px;width: 500px;"></li>
-            <li><a class="anav" href="#inicio">Inicio</a></li>
-            <li><a class="anav" href="#nosotros">Nosotros</a></li>
-            <li><a class="anav" href="#servicios">Servicios</a></li>
-            <li><a class="anav" href="#resenas">Reseñas</a></li>
-            <li><a class="anav" href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li> <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\logo.png"
+          style="padding-right: 380px;height: 50px;width: 500px;"></li>
+      <li><a class="anav" href="#inicio">Inicio</a></li>
+      <li><a class="anav" href="#nosotros">Nosotros</a></li>
+      <li><a class="anav" href="#servicios">Servicios</a></li>
+      <li><a class="anav" href="#resenas">Reseñas</a></li>
+      <li><a class="anav" href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
-    <div class="banner">
-        <div class="banner-content">
-            <h1 class="satisfy-regular">Pan del Pan</h1>
-            <h3>UNA PRUEBA DEL TOQUE CASERO</h3>
-            <a href="#contacto" class="btn">Registrate</a>
-        </div>
+  <div id="inicio" class="banner">
+    <div class="banner-content">
+      <h1 class="satisfy-regular">Pan del Pan</h1>
+      <h3>UNA PRUEBA DEL TOQUE CASERO</h3>
+      <a href="#contacto" class="btn">Registrate</a>
     </div>
-    <div class="row">
-        <h1>SERVICIOS</h1>
-        <div class="column">
-          <div class="card">
-          <a href="#IrVentanaFlotante1"> <h3>Pan Bajo Pedido</h3> </a>
-         <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\panbajopedido.jpg"  style="width:220px;height:280px;">
-            
-        
-            <p style=" padding-top: 10px; padding-bottom: 10px;" >Precio x unidad $500</p>
-            
-            <p>Desde 100 unidades en adelante <br>Envío GRATIS</p>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <a href="#IrVentanaFlotante2"><h3>CupCakes</h3> </a>
-            <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\imgcupcakes.jpg"  style="width:220px;height:280px;">
-            
-             <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $2.500</p>
-            
-            <p>Desde 20 unidades en adelante <br>Envío GRATIS</p>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <a href="#IrVentanaFlotante3"> <h3>Pasteles</h3> </a>
-            <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\imgpasteles.jpg"  style="width:220px;height:280px;">
-            
-            <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $100.000</p>
-            
-            <p>Desde 1 unidades en adelante <br>Envío GRATIS</p>
-          </div>
-        </div>
-        
-      </div>
-      <div id="IrVentanaFlotante1" class="modal">
-        <div class="ventana">
-          <a href="#" style='text-decoration:none;'>
-          X
-          </a>
-          <h2>Panes Artesanales</h2>
-          <p> Hechos con masa madre y horneados a diario para garantizar frescura y sabor auténtico</p>
-        </div>  
-      </div>
+  </div>
+  <div class="row">
+    <h1 id="servicios">SERVICIOS</h1>
+    <div class="column">
+      <div class="card">
+        <a href="#IrVentanaFlotante1">
+          <h3>Pan Bajo Pedido</h3>
+        </a>
+        <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\panbajopedido.jpg"
+          style="width:220px;height:280px;">
 
-      <div id="IrVentanaFlotante2" class="modal">
-        <div class="ventana">
-          <a href="#" style='text-decoration:none;'>
-          X
-          </a>
-          <h2>Cupcakes gourmet: </h2>
-          <p> Variedad de sabores con decoraciones únicas y con el sabor casero que te encanta</p>
-        </div>  
-      </div>
 
-      <div id="IrVentanaFlotante3" class="modal">
-        <div class="ventana">
-          <a href="#" style='text-decoration:none;'>
-          X
-          </a>
-          <h2>Pasteles Personalizados:</h2>
-          <p> Perfectos para cualquier ocasión, desde cumpleaños hasta bodas</p>
-        </div>  
-      </div>
+        <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $500</p>
 
-      <div class="banner-nosotros">
-        <div class="banner-content">
-            <h1 class="satisfy-regular"style="padding-left: 200px;padding-top: 80px;">Nosotros</h1>
-            <p style="padding-left: 200px;height: 100px;width: 600px;padding-bottom: 400px;">Somos una panadería artesanal especializada en la comercialización de panes, pasteles y cupcakes elaborados con ingredientes frescos y de alta calidad. Nos enorgullecemos de ofrecer productos hechos a mano, con recetas tradicionales y un toque especial que hace que cada bocado sea una experiencia deliciosa</p>
-        
-        </div>
+        <p>Desde 100 unidades en adelante <br>Envío GRATIS</p>
+      </div>
     </div>
 
+    <div class="column">
+      <div class="card">
+        <a href="#IrVentanaFlotante2">
+          <h3>CupCakes</h3>
+        </a>
+        <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\imgcupcakes.jpg"
+          style="width:220px;height:280px;">
 
+        <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $2.500</p>
 
+        <p>Desde 20 unidades en adelante <br>Envío GRATIS</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <a href="#IrVentanaFlotante3">
+          <h3>Pasteles</h3>
+        </a>
+        <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\imgpasteles.jpg"
+          style="width:220px;height:280px;">
+
+        <p style=" padding-top: 10px; padding-bottom: 10px;">Precio x unidad $100.000</p>
+
+        <p>Desde 1 unidades en adelante <br>Envío GRATIS</p>
+      </div>
+    </div>
+
+  </div>
+  <div id="IrVentanaFlotante1" class="modal">
+    <div class="ventana">
+      <a href="#servicios" style='text-decoration:none;'>
+        X
+      </a>
+      <h2>Panes Artesanales</h2>
+      <p> Hechos con masa madre y horneados a diario para garantizar frescura y sabor auténtico</p>
+    </div>
+  </div>
+
+  <div id="IrVentanaFlotante2" class="modal">
+    <div class="ventana">
+      <a href="#servicios" style='text-decoration:none;'>
+        X
+      </a>
+      <h2>Cupcakes gourmet: </h2>
+      <p> Variedad de sabores con decoraciones únicas y con el sabor casero que te encanta</p>
+    </div>
+  </div>
+
+  <div id="IrVentanaFlotante3" class="modal">
+    <div class="ventana">
+      <a href="#servicios" style='text-decoration:none;'>
+        X
+      </a>
+      <h2>Pasteles Personalizados:</h2>
+      <p> Perfectos para cualquier ocasión, desde cumpleaños hasta bodas</p>
+    </div>
+  </div>
+
+  <div class="banner-nosotros">
+    <div class="banner-content">
+      <h1 class="satisfy-regular" style="padding-left: 200px;padding-top: 80px;" id="nosotros">Nosotros</h1>
+      <p style="padding-left: 200px;height: 100px;width: 600px;padding-bottom: 400px;">Somos una panadería artesanal
+        especializada en la comercialización de panes, pasteles y cupcakes elaborados con ingredientes frescos y de alta
+        calidad. Nos enorgullecemos de ofrecer productos hechos a mano, con recetas tradicionales y un toque especial
+        que hace que cada bocado sea una experiencia deliciosa</p>
+
+    </div>
+  </div>
+
+  <div class="row-resenas">
+    <h1 id="resenas">RESEÑAS</h1>
+    <div class="column-resenas">
+      <div class="card-resena">
+        <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\comillas.png"
+          alt="">
+        <h4 style="padding-bottom: 20px;padding-top: 40px;">CLIENTE DE PAN ARTESANAL</h4>
+        <p style=" padding-right: 30px; padding-bottom: 20px ">El sabor del pan artesanal me transportó a mi infancia,
+          cuando mi mamá horneaba en casa. La corteza crujiente
+          y el interior suave me recordaron esos días llenos de calidez y amor en la cocina.</p>
+        <div class="rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-resenas">
+      <div class="card-resena">
+        <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\comillas.png"
+          alt="">
+        <h4 style="padding-bottom: 20px;padding-top: 40px;">CLIENTE DE CUPCAKES</h4>
+        <p style=" padding-right: 30px; padding-bottom: 20px ">Compré unos cupcakes aquí y nunca había probado algo tan
+          delicioso. La textura y el sabor eran perfectos. ¡Definitivamente los mejores que he comido!.</p>
+        <div class="rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-resenas">
+      <div class="card-resena">
+        <img src="C:\Users\santi\OneDrive\Desktop\proyectofinaljovenescreativos\Pandelpan-project\img\comillas.png"
+          alt="">
+        <h4 style="padding-bottom: 20px;padding-top: 40px;">CLIENTE DE PASTEL </h4>
+        <p style=" padding-right: 30px; padding-bottom: 20px ">Compré un pastel personalizado para el cumpleaños de un
+          familiar y me encantó. El diseño y el sabor fueron perfectos. ¡Lo recomiendo totalmente!.</p>
+        <div class="rating">
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
