@@ -10,7 +10,7 @@ body {
 
 .banner {
     height: 600px;
-    background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/Imagenbanner.jpg');
+    background-image: url('../img/Imagenbanner.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -203,7 +203,7 @@ a:hover {
 
 .banner-nosotros {
     height: 600px;
-    background-image: url('C:/Users/santi/OneDrive/Desktop/proyectofinaljovenescreativos/Pandelpan-project/img/imgcompletanosotros.jpg');
+    background-image: url('../img/imgcompletanosotros.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
