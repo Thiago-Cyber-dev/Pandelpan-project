@@ -12,19 +12,20 @@
         <h1>Inicio de sesión</h1>
         <form method="post">
             <div class="username">
-                <input type="text" required>
-                <label>Nombre de usuario</label>
+                <input id="correo" type="text" required>
+                <label>Correo</label>
             </div>
             <div class="contrasena">
-                <input type="password" required>
+                <input id="contrasena" type="password" required>
                 <label>Contraseña</label>
             </div>
-            <input type="submit" value="Iniciar">
+            <input type="submit" value="Iniciar" onclick="inicioSesionUsuario()">
             <div class="registrarse"
                 style="padding-top: 15px;padding-bottom: 15px; display: flex; justify-content: center;">
                 <a href="registro.html">Registrarme</a>
             </div>
         </form>
     </div>
+    <script src = "./js/FuncionesUsuario.js"></script>
 </body>
 </html>

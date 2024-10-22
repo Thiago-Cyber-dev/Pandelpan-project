@@ -14,38 +14,38 @@
         <h1>Registrate</h1>
         <form method="post">
             <div class="username">
-                <input type="text" required>
+                <input id="nombre1" type="text" required>
                 <label> Primer Nombre</label>
             </div>
             <div class="username2">
-                <input type="text" required>
+                <input id="nombre2" type="text" required>
                 <label>Segundo Nombre</label>
             </div>
             <div class="last_name">
-                <input type="text" required>
+                <input id="apellido1" type="text" required>
                 <label>Primer Apellido</label>
             </div>
             <div class="last_name2">
-                <input type="text" required>
+                <input id="apellido2" type="text" required>
                 <label>Segundo Apellido</label>
             </div>
             <div class="correo">
-                <input type="email" required>
+                <input id="correo1" type="email" required>
                 <label>Correo Electronico</label>
             </div>
             <div class="contrasena">
-                <input type="password" required>
+                <input id="contrasena1" type="password" required>
                 <label>Contraseña</label>
             </div>
             <div class="contrasena2">
-                <input type="password" required>
+                <input id="contrasena2" type="password" required>
                 <label>Confirme su Contraseña</label>
             </div>
             <div class="form-container">
                 <form id="optionForm">
                     <div class="select-container">
                         <label for="selectOption">Género</label>
-                        <select id="selectOption" required>
+                        <select id="selectGenero" required>
                             <option value="">--Selecciona--</option>
                             <option value="Masculino">Masculino</option>
                             <option value="Femenino">Femenino</option>
@@ -55,7 +55,7 @@
                 </form>
             </div>
             <div style="display: flex;justify-content: center;">
-                <input type="submit" value="Registrarme">
+                <input type="submit" value="Registrarme" onclick="registrarUsuario()">
             </div>
             <div class="Iniciar-sesion"
                 style="padding-top: 15px;padding-bottom: 15px; display: flex; justify-content: center;">
@@ -65,5 +65,6 @@
             </div>
         </form>
     </div>
+    <script src = "./js/FuncionesUsuario.js"></script>
 </body>
 </html>
