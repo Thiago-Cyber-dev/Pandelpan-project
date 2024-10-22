@@ -17,13 +17,16 @@
 
   <nav>
     <ul>
-      <li> <img src="./img/logo.png"
-          style="padding-right: 380px;height: 50px;width: 500px;"></li>
+      <li> 
+        <img src="./img/logo.png"
+        style="height: auto;width: auto;"></li>
       <li><a class="anav" href="#inicio">Inicio</a></li>
       <li><a class="anav" href="#nosotros">Nosotros</a></li>
       <li><a class="anav" href="#servicios">Servicios</a></li>
       <li><a class="anav" href="#resenas">Reseñas</a></li>
       <li><a class="anav" href="#contacto">Contacto</a></li>
+      <li><a id="nombreUsuario"></a></li>
+      <li><a href="#" id="logoutLink">Cerrar sesión</a></li>
     </ul>
   </nav>
 
@@ -214,5 +217,13 @@
       </div>
     </div>
   </div>
+
+<script>
+  // Obtener el valor de localStorage
+  const receivedValue = localStorage.getItem('nombreUser');
+
+  // Mostrar el valor en el span
+  document.getElementById("nombreUsuario").textContent = receivedValue;
+</script>
 </body>
 </html>

@@ -52,7 +52,8 @@ function inicioSesionUsuario(){
     const usuarioEncontrado = usuarios.find(usuario => usuario.correo === correo);
  if (correo=="" || contrasena=="") {
      alert("ingrese correo y contraseña para iniciar sesión");
-}else if(usuarioEncontrado.correo== correo && usuarioEncontrado.contrasena== contrasena ) {  
+}else if(usuarioEncontrado.correo== correo && usuarioEncontrado.contrasena== contrasena ) { 
+  localStorage.setItem("nombreUser", usuarioEncontrado.nombre1+" "+usuarioEncontrado.apellido1) 
    window.location.href = "index.html";
 }else{
     alert("el usuario o la contraseña son incorrectos, o no tienes una cuenta");
