@@ -1,4 +1,18 @@
+function checkAllFilled() {
+    const form = document.getElementById('miformulario');
+    
+    // Verificar si todos los inputs requeridos están llenos
+    const inputsLlenos = Array.from(form.elements)
+                           .filter(el => el.tagName === 'INPUT' && el.hasAttribute('required'))
+                           .every(input => input.value.trim() !== '');
+  
+    return inputsLlenos;
+  }
+
 function registrarUsuario() {
+    const allFilled = checkAllFilled();
+  
+  if (allFilled) {
     const nombre1= document.getElementById("nombre1").value;
     const nombre2= document.getElementById("nombre2").value;
     const apellido1= document.getElementById("apellido1").value;
@@ -18,18 +32,17 @@ function registrarUsuario() {
             correo:correo1,
             contrasena:contrasena1,
             genero:selectGenero
-        }
-        
+        } 
         usuarios.push(nuevoUsuario)
-
-
         localStorage.setItem("usuarios",JSON.stringify(usuarios))
         alert("usuario registrado exitosamente") 
         window.location.href = "index.html"
     }else{
         alert("Las contraseñas no coinciden, intentelo de nuevo")
     } 
-
+  } else {
+    alert('Algunos campos están vacíos, registra todos los campos para crear una cuenta');
+  }
 }
 
 function inicioSesionUsuario(){
@@ -37,11 +50,12 @@ function inicioSesionUsuario(){
     const contrasena= document.getElementById("contrasena").value;
     const usuarios=JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioEncontrado = usuarios.find(usuario => usuario.correo === correo);
- console.log(usuarioEncontrado.correo,usuarioEncontrado.contrasena)
-    if (usuarioEncontrado.correo== correo && usuarioEncontrado.contrasena== contrasena ) {
-        window.location.href = "index.html"
-    }else{
-        alert("el usuario o la contraseña son incorrectos, o no tienes una cuenta")
-    }
+ if (correo=="" || contrasena=="") {
+     alert("ingrese correo y contraseña para iniciar sesión");
+}else if(usuarioEncontrado.correo== correo && usuarioEncontrado.contrasena== contrasena ) {  
+   window.location.href = "index.html";
+}else{
+    alert("el usuario o la contraseña son incorrectos, o no tienes una cuenta");
+}
 
 }
