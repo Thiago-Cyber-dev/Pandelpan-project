@@ -84,11 +84,13 @@ ul {
 }
 
 ul li {
-    margin: 0 15px; /* Espacio entre elementos */
+    margin: 0 15px;
+    /* Espacio entre elementos */
 }
 
 ul li img {
-    height: 50px; /* Ajusta el tamaño del logo */
+    height: 50px;
+    /* Ajusta el tamaño del logo */
     width: auto;
 }
 
@@ -179,7 +181,7 @@ a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
 }
 
 /*css de la alerta*/
@@ -322,4 +324,56 @@ a:hover {
     color: #000000;
     padding-left: 80px;
 
+}
+
+.logomenu {
+    height: auto;
+    width: auto;
+
+}
+
+.panbajopedido {
+    width: 220px;
+    height: 280px;
+}
+
+/* Estilos básicos para el modal */
+.modal-cerrarsesion {
+    display: none;
+    /* Modal oculto inicialmente */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro */
+}
+
+.modal-content-cerrarsesion {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.close,
+.logout {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel {
+    background-color: #ccc;
+    color: black;
 }
