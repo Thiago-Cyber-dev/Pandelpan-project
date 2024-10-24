@@ -377,3 +377,105 @@ a:hover {
     background-color: #ccc;
     color: black;
 }
+.texto-pan{
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.cupcakes-img{
+    width:220px;
+    height:280px;
+}
+
+.tamano-cupcakes{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pasteles-img{
+    width:220px;
+    height:280px;
+}
+
+.tamano-pasteles{
+    padding-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.texto-servicios{
+    text-decoration:none;
+}
+
+.texto-nosotros{
+    padding-left: 200px;
+    padding-top: 80px;
+}
+
+.descripcion-nosotros{
+    padding-left: 200px;
+    height: 100px;
+    width: 600px;
+    padding-bottom: 400px;
+}
+
+.resena-1pan{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.resena-cliente-pan{
+    padding-right: 30px; 
+    padding-bottom: 20px
+}
+
+.resena-1cupcakes{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.resena-cliente-cupcakes{
+    padding-right: 30px; 
+    padding-bottom: 20px
+}
+
+.resena-1pastel{
+    padding-bottom: 20px;
+    padding-top: 40px
+}
+
+.resena-cliente-pastel{
+    padding-right: 30px;
+    padding-bottom: 20px
+}
+
+.imagenfinal-tamano{
+    width: 750px;
+    height: 800px;
+}
+
+.nosvemos-texto{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.img-facebook{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.img-instagram{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.img-whatsapp{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+

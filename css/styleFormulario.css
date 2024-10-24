@@ -118,3 +118,17 @@ form .contrasena {
     pointer-events: none;
     transition: .5s;
 }
+
+.link-registrar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex; 
+    justify-content: center;
+}
+
+.link-paginainicio{
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    display: flex; 
+    justify-content: center;
+}

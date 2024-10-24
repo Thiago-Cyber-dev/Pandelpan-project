@@ -292,4 +292,15 @@ form .correo {
     font-weight: bold;
   }
   
+  .botton-registro{
+    display: flex;
+    justify-content: center;
+}
+
+.botton-iniciosesion{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex; 
+    justify-content: center;
+}
 
