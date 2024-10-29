@@ -48,8 +48,10 @@ function registrarUsuario() {
 function inicioSesionUsuario() {
   const correo = document.getElementById("correo").value;
   const contrasena = document.getElementById("contrasena").value;
+
   const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
   const usuarioEncontrado = usuarios.find(usuario => usuario.correo === correo);
+  
   if (correo == "" || contrasena == "") {
     alert("ingrese correo y contraseña para iniciar sesión");
   } else if (usuarioEncontrado.correo == correo && usuarioEncontrado.contrasena == contrasena) {

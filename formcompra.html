@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Hacer un pedido</title>
+    <link rel="stylesheet" href="./css/styleformcompra.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Llena el formulario para hacer una compra</h1>
+        <form id="miformulario">
+            <div class="nombres">
+                <input id="nombres" type="text" placeholder="Nombres" required>
+            </div>
+            <div class="apellidos">
+                <input id="apellidos" type="text" placeholder="Apellidos" required>
+            </div>
+            <div class="correo">
+                <input id="correo" type="email" placeholder="Correo Electrónico" required>
+            </div>
+            <div class="direccion">
+                <input id="direccion" type="text" placeholder="Dirección" required>
+            </div>
+            <div class="select-producto">
+                <label for="producto">Seleccione Producto</label>
+                <select id="producto" required>
+                    <option value="">--Selecciona--</option>
+                    <option value="Pan Artesanal">Pan Artesanal</option>
+                    <option value="Cupcakes Personalizado">Cupcakes Personalizado</option>
+                    <option value="Pastel para cualquier ocasión">Pastel para cualquier ocasión</option>
+                </select>
+            </div>
+            <div class="select-cantidad">
+                <label for="cantidad">Seleccione Cantidad</label>
+                <select id="cantidad" required>
+                    <option value="">--Selecciona--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10+">10 o más</option>
+                </select>
+            </div>
+
+            <!-- Input para cantidad personalizada, oculto por defecto -->
+            <div class="cantidad-personalizada">
+                <label class="escribe-user" for="cantidadPersonalizada">Ingrese cantidad (máximo 200)</label>
+                <input 
+                    type="number" 
+                    id="cantidadPersonalizada" 
+                    placeholder="Ingrese cantidad" 
+                    min="10" 
+                    max="200"
+                />
+            </div>
+
+            <div class="hacer-pedido">
+                <input id="submitButton" type="submit" value="Hacer pedido">
+            </div>
+            <div class="Cancelar-pedido">
+                <a href="index.html">Cancelar pedido</a>
+            </div>
+        </form>
+    </div>
+    <script src = "./js/formcompra.js"></script>
+</body>
+</html>

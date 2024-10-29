@@ -2,7 +2,8 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: montserrat;
-    background: linear-gradient(150deg, #dec73a, #462b15);
+    background-image: url(../img/Imagenbanner.jpg);
+    background-repeat: no-repeat;
     height: 100vh;
     
 }
@@ -14,7 +15,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: white;
+    background: rgb(255, 241, 224);
     border-radius: 10px;
 }
 
@@ -110,8 +111,12 @@ input[type="submit"]:hover {
 }
 
 .Iniciar-sesion a {
-    color: blue;
+    color: rgb(243, 154, 1);
     text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex; 
+    justify-content: center;
 }
 
 .Iniciar-sesion a:hover {
@@ -251,7 +256,7 @@ form .correo {
 /*css para el select*/
 
 .form-container {
-    background-color: #fff;
+    background-color:rgb(255, 241, 224);
     padding: 20px;
     padding-left: 0px;
     padding-top: 5px;
@@ -294,13 +299,6 @@ form .correo {
   
   .botton-registro{
     display: flex;
-    justify-content: center;
-}
-
-.botton-iniciosesion{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex; 
     justify-content: center;
 }
 

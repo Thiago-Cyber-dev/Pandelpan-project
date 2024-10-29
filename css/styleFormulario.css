@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: montserrat;
-    background: linear-gradient(150deg, #dec73a, #462b15);
+    background-image: url(../img/Imagenbanner.jpg);
     height: 100vh;
 }
 
@@ -13,7 +13,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: white;
+    background: rgb(255, 241, 224);
     border-radius: 10px;
 }
 
@@ -84,8 +84,14 @@ input[type="button"]:hover {
 }
 
 .registrarse a {
-    color: blue;
+    color: rgb(243, 154, 1);
     text-decoration: none;
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    
 }
 
 .registrarse a:hover {
@@ -117,18 +123,4 @@ form .contrasena {
     font-size: 16px;
     pointer-events: none;
     transition: .5s;
-}
-
-.link-registrar{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex; 
-    justify-content: center;
-}
-
-.link-paginainicio{
-    padding-top: 15px;
-    padding-bottom: 15px; 
-    display: flex; 
-    justify-content: center;
 }
