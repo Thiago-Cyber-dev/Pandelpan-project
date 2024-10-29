@@ -2,8 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: montserrat;
-    background-image: url(../img/Imagenbanner.jpg);
-    height: 100vh;
+    background-image: url(../img/imgfinalyredessociales.jpg);
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
