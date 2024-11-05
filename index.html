@@ -34,8 +34,8 @@
     <div class="banner-content">
       <h1 class="satisfy-regular">Pan del Pan</h1>
       <h3>UNA PRUEBA DEL TOQUE CASERO</h3>
-      <a href="registro.html" class="btn">Registrate</a>
-      <a href="Iniciosesion.html" class="btn">Inicia Sesión</a>
+      <a id="botonRegistrate" href="registro.html" class="btn">Registrate</a>
+      <a id="botonInicioSesion" href="Iniciosesion.html" class="btn">Inicia Sesión</a>
     </div>
   </div>
   <div class="row">
@@ -77,9 +77,11 @@
         <p>Desde 1 unidades en adelante <br>Envío GRATIS</p>
       </div>
     </div>
-
+      <div class="row-pedido posicionpedido" >
+          <a id="btn-pedido" href="formcompra.html" class="btn-pedido">Hacer un pedido</a>
+      </div>
   </div>
-  <div id="IrVentanaFlotante1" class="modal">
+  <div id="IrVentanaFlotante1" class="modalIzquierda">
     <div class="ventana">
       <a href="#servicios" class="texto-servicios">
         X
@@ -99,7 +101,7 @@
     </div>
   </div>
 
-  <div id="IrVentanaFlotante3" class="modal">
+  <div id="IrVentanaFlotante3" class="modalDerecha">
     <div class="ventana">
       <a href="#servicios" class="texto-servicios">
         X
@@ -215,13 +217,22 @@
     const receivedValue = localStorage.getItem('nombreUser');
     const cerrarSesion = document.getElementById("logout-link");
     const nombre = document.getElementById("nombreUsuario");
+    const botonRegistrate = document.getElementById("botonRegistrate");
+    const botonInicioSesion = document.getElementById("botonInicioSesion");
+    const btnPedido = document.getElementById("btn-pedido");
     nombre.textContent = receivedValue;
     if (receivedValue == "") {
       nombre.style.display = "none";
       cerrarSesion.style.display = "none";
+      botonRegistrate.style.display = "inline-block";
+      botonInicioSesion.style.display = "inline-block";
+      btnPedido.style.display = "inline-block";
     } else {
       nombre.style.display = "list-item";
       cerrarSesion.style.display = "list-item";
+      botonRegistrate.style.display = "none";
+      botonInicioSesion.style.display = "none";
+      btnPedido.style.display = "none";
     }
   </script>
   <script src="./js/FuncionesUsuario.js"></script>

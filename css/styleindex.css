@@ -64,6 +64,23 @@ h3 {
 
 }
 
+.posicionpedido{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-pedido {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    }
+
 .btn:hover {
     background-color: #ffb650;
 }
@@ -159,6 +176,12 @@ a:hover {
     background-color: #e8d7be;
 }
 
+.row-pedido {
+    margin: 0 -5px;
+    padding-bottom: 0px;
+    background-color: #e8d7be;
+}
+
 
 .row:after {
     content: "";
@@ -203,6 +226,32 @@ a:hover {
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
+}
+
+.modalDerecha {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: -250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+    transform: translateX(500px)
+}
+
+.modalIzquierda {
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: -250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+    transform: translateX(-500px)
 }
 
 #IrVentanaFlotante1:target {
@@ -449,7 +498,7 @@ a:hover {
 
 .imagenfinal-tamano{
     width: 750px;
-    height: 800px;
+    height: 693.5px;
 }
 
 .nosvemos-texto{
