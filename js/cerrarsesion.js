@@ -12,7 +12,7 @@ logoutLink.addEventListener('click', function (event) {
 // Cuando se haga clic en el botón de confirmación, el nombre del usuario se convierte en vacio y se redirecciona a la pagina iniciosesion.html
 confirmLogout.addEventListener('click', function () {
     localStorage.setItem("nombreUser", "")
-    window.location.href = 'iniciosesion.html'; 
+    window.location.href = 'Iniciosesion.html'; 
 });
 
 // Cuando se haga clic en el botón de cancelar, ocultar el modal
